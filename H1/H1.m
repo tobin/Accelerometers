@@ -2,7 +2,8 @@
 
 data0 = dlmread('H1_plant0.txt');
 data1 = dlmread('H1_plant1.txt');
-data = [data0; data1];
+data2 = dlmread('H1_plant2.txt');
+data = [data0; data1; data2];
 data = sortrows(data, 1);
 
 f = data(:,1);
